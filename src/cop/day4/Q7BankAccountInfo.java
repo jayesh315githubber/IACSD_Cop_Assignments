@@ -44,7 +44,7 @@ public class Q7BankAccountInfo {
 				break;
 
 			case 2:
-				System.out.println("value of index : " + index);
+				//System.out.println("value of index : " + index);
 				System.out.println("Enter the total deposit amount.");
 				double amt = sc.nextDouble();
 
