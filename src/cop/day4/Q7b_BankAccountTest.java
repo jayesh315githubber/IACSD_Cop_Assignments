@@ -46,20 +46,22 @@ public class Q7b_BankAccountTest {
 				System.out.println("Enter the Account Number Or Account Holder name by selecting following option.");
 				System.out.println("\r\n" + "1. Account Number \r\n" + "2. Account Holder Name");
 
-				int so = sc.nextInt();
+				int so2 = sc.nextInt();
 
-				int ano = 0;
-				String ana = null;
-				if (so == 1) {
+				int ano2 = 0;
+				String ana2 = null;
+				if (so2 == 1) {
 					System.out.println("Enter the Account Number.");
-					ano = sc.nextInt();
+					ano2 = sc.nextInt();
 				}
-				if (so == 2) {
+				if (so2 == 2) {
 					System.out.println("Enter the Account Holder name.");
-					ana = sc.next();
+					ana2 = sc.next();
 				}
+				
 				for (int i = 0; i < index; i++) {
-					if ((bacArr[i].getACTNO()) == ano || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana))) {
+					System.out.println("******"+bacArr[i].getACTNO());
+					if (((bacArr[i].getAccountNo()) == ano2) || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana2))) {
 						System.out.println("Enter the amount to be deposited.");
 						int depositeAmt = sc.nextInt();
 						bacArr[i].deposite(depositeAmt);
@@ -72,21 +74,21 @@ public class Q7b_BankAccountTest {
 				System.out.println("Enter the Account Number Or Account Holder name by selecting following option.");
 				System.out.println("\r\n" + "1. Account Number \r\n" + "2. Account Holder Name");
 
-				int so2 = sc.nextInt();
+				int so3 = sc.nextInt();
 
-				int ano2 = 0;
-				String ana2 = null;
-				if (so2 == 1) {
+				int ano3 = 0;
+				String ana3 = null;
+				if (so3 == 1) {
 					System.out.println("Enter the Account Number.");
-					ano = sc.nextInt();
+					ano3 = sc.nextInt();
 				}
-				if (so2 == 2) {
+				if (so3 == 2) {
 					System.out.println("Enter the Account Holder name.");
-					ana = sc.next();
+					ana3 = sc.next();
 				}
 				for (int i = 0; i < index; i++) {
-					if ((bacArr[i].getACTNO() == ano2) || (bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana2)) {
-						System.out.println("Enter the amount to be deposited.");
+					if (((bacArr[i].getAccountNo()) == ano3) || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana3))) {
+						System.out.println("Enter the amount to be withdraw.");
 						int withdrawAmt = sc.nextInt();
 						bacArr[i].withdraw(withdrawAmt);
 					}
@@ -109,20 +111,20 @@ public class Q7b_BankAccountTest {
 						"Enter the Account Number Or Account Holder name by selecting following option for seraching account details.");
 				System.out.println("\r\n" + "1. Account Number \r\n" + "2. Account Holder Name");
 
-				int so3 = sc.nextInt();
+				int so5 = sc.nextInt();
 
-				int ano3 = 0;
-				String ana3 = null;
-				if (so3 == 1) {
+				int ano5 = 0;
+				String ana5 = null;
+				if (so5 == 1) {
 					System.out.println("Enter the Account Number.");
-					ano = sc.nextInt();
+					ano5 = sc.nextInt();
 				}
-				if (so3 == 2) {
+				if (so5 == 2) {
 					System.out.println("Enter the Account Holder name.");
-					ana = sc.next();
+					ana5 = sc.next();
 				}
 				for (int i = 0; i < index; i++) {
-					if ((bacArr[i].getACTNO() == ano3) || (bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana3)) {
+					if (((bacArr[i].getAccountNo()) == ano5) || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana5))) {
 
 						bacArr[i].showAllCustomersDetails();
 					}
@@ -149,7 +151,7 @@ public class Q7b_BankAccountTest {
 				}
 
 				for (int i = 0; i < index; i++) {
-					if ((bacArr[i].getACTNO() == ano6) || (bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana6)) {
+					if (((bacArr[i].getAccountNo()) == ano6) || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana6))) {
 
 						System.out.println("Select the option to modify/update the customer detail.");
 						System.out.println("1.Account Holder Name;\r\n" + "2.Email ID;\r\n" + "3.Mobile No;\r\n"
@@ -206,14 +208,14 @@ public class Q7b_BankAccountTest {
 				String ana7 = null;
 				if (so7 == 1) {
 					System.out.println("Enter the Account Number.");
-					ano = sc.nextInt();
+					ano7 = sc.nextInt();
 				}
 				if (so7 == 2) {
 					System.out.println("Enter the Account Holder name.");
-					ana = sc.next();
+					ana7 = sc.next();
 				}
 				for (int i = 0; i < index; i++) {
-					if ((bacArr[i].getACTNO() == ano7) || (bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana7)) {
+					if (((bacArr[i].getAccountNo()) == ano7) || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana7))) {
 
 						bacArr[i].knowYrBalance();
 					}
@@ -234,19 +236,18 @@ public class Q7b_BankAccountTest {
 
 				if (so8 == 1) {
 					System.out.println("Enter the Account Number of sender.");
-					ano = sc.nextInt();
+					ano8 = sc.nextInt();
 				}
 				if (so8 == 2) {
 					System.out.println("Enter the Account Holder name of sender.");
-					ana = sc.next();
+					ana8 = sc.next();
 				}
 
 				for (int i = 0; i < index; i++) {
-					if ((bacArr[i].getACTNO() == ano8) || (bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana8)) {
+					if (((bacArr[i].getAccountNo()) == ano8) || ((bacArr[i].getAccountHolderName()).equalsIgnoreCase(ana8))) {
 						System.out.println("Enter the amount to transfer");
 						int amountTransfer = sc.nextInt();
 
-						System.out.println("-----------------------------------------");
 
 						System.out.println(
 								"Enter the Account Number Or Account Holder name by selecting following option to know account balance.");
@@ -267,8 +268,7 @@ public class Q7b_BankAccountTest {
 						}
 
 						for (int j = 0; j < index; j++) {
-							if ((bacArr[j].getACTNO() == ano8r)
-									|| (bacArr[j].getAccountHolderName()).equalsIgnoreCase(ana8r)) {
+							if (((bacArr[j].getAccountNo()) == ano8r) || ((bacArr[j].getAccountHolderName()).equalsIgnoreCase(ana8r))) {
 								bacArr[i].moneyTransfer(amountTransfer, bacArr[j]);
 							}
 						}

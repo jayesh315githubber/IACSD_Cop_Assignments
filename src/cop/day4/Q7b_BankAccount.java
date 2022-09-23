@@ -42,6 +42,10 @@ public class Q7b_BankAccount {
 		return ACTNO;
 	}
 	
+	public int getAccountNo() {
+		return accountNo ;
+	}
+	
 	public String getAccountHolderName() {
 		return accountHolderName;
 	}
